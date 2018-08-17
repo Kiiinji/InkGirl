@@ -1,4 +1,4 @@
-#InkGirl
+#Enju
 import discord
 import random
 import time
@@ -14,6 +14,7 @@ from discord.ext.commands import Bot
 from discord import opus
 import discord
 from discord.ext import commands
+import youtube_dl
 
 
 def get_metadata(query):
@@ -155,6 +156,22 @@ async def stop(ctx):
 	ctx.voice_client.stop()
 	msg = await ctx.send('<:squidrosedown:479789310963613696> Vidéo arrêtée ! <:squidrosedown:479789310963613696>')
 	await msg.add_reaction("<:splatoon2:479712391823622155")
+
+
+
+# @bot.command()
+# async def splatoon(ctx):
+#     async with aiohttp.ClientSession() as session:
+#         async with session.get('https://safebooru.org//index.php?page=dapi&tags=splatoon&s=post&limit=1&q=index&json=1') as r: 
+#             js = await r.json(content_type='text/html')
+#             arr = js[0]
+#             embed = discord.Embed(colour=discord.Colour.magenta())
+#             embed.set_image(url="https://safebooru.org//images/{}/{}".format(arr['directory'],arr['image']))
+#             await ctx.send(embed=embed)
+            #await ctx.send("https://safebooru.org//images/{}/{}".format(arr['directory'],arr['image']))
+
+
+
 
 
 bot.run(os.getenv("TOKEN"))
