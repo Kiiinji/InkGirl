@@ -13,7 +13,6 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 from discord import opus
 import discord
-from discord.ext import commands
 import youtube_dl
 
 
@@ -157,7 +156,10 @@ async def stop(ctx):
 	msg = await ctx.send('<:squidrosedown:479789310963613696> Vidéo arrêtée ! <:squidrosedown:479789310963613696>')
 	await msg.add_reaction("<:splatoon2:479712391823622155")
 
-
+bot.run(os.getenv("TOKEN"))
+	
+	
+	
 
 # @bot.command()
 # async def splatoon(ctx):
@@ -172,6 +174,3 @@ async def stop(ctx):
 
 
 
-
-
-bot.run(os.getenv("TOKEN"))
