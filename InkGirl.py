@@ -1,4 +1,4 @@
-#Enju
+#InkGirl
 import discord
 import random
 import time
@@ -158,5 +158,4 @@ async def stop(ctx):
 	await msg.add_reaction("<:splatoon2:479712391823622155")
 
 
-bot.run('NDc5Nzc5OTAxOTE5MTk5MjM1.DleQgg.z0cPWzPzCkznrCKWuk5WrX9LG_c')
-#bot.run(os.getenv("TOKEN"))
+bot.run(os.getenv("TOKEN"))
