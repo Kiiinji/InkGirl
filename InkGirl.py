@@ -75,7 +75,7 @@ async def aide(ctx):
     em.add_field(name="=inkgirl", value="Envoie une image d'Ink Girl", inline=False)
     em.add_field(name="=meme", value="Envoie une image de meme Splatoon aléatoire", inline=False)
     em.add_field(name="=rip", value="Affiche l'image exprimant la profonde tristesse de Kinji suite au décés de son CD Splatoon :'(", inline=False)
-    em.add_field(name="=don", value="Donne le lien pour faire un don à Kinji histoire qu'il se rachète Splatoon", inline=False)
+    em.add_field(name="=don", value="Donne le lien pour faire un don à Rem~rin pour qu'il s'achète une Wii U et Splatoon", inline=False)
     em.add_field(name="=join", value="Fait rejoindre Ink Girl dans le channel vocal actuel", inline=False)
     em.add_field(name="=music", value="Joue une musique aléatoire de Splatoon dans ce channel vocal", inline=False)
     em.add_field(name="=pause", value="Met la musique qui est jouée en pause", inline=False)
@@ -120,7 +120,7 @@ async def meme(ctx):
 
 @bot.command()
 async def don(ctx):
-	msg = await ctx.send('https://www.gofundme.com/mon-splatoon-est-mort')
+	msg = await ctx.send('https://www.gofundme.com/une-wii-u')
 	await msg.add_reaction("<:splatoon:479641297225908224")
 
 
