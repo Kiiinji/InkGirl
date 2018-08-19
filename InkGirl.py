@@ -1,4 +1,4 @@
-#InkGirl
+#Enju
 import discord
 import random
 import time
@@ -76,6 +76,7 @@ async def aide(ctx):
     em.add_field(name="=meme", value="Envoie une image de meme Splatoon aléatoire", inline=False)
     em.add_field(name="=rip", value="Affiche l'image exprimant la profonde tristesse de Kinji suite au décés de son CD Splatoon :'(", inline=False)
     em.add_field(name="=don", value="Donne le lien pour faire un don à Rem~rin pour qu'il s'achète une Wii U et Splatoon", inline=False)
+    em.add_field(name="=jtm", value="Déclare ton amour à Ink Girl (pas sûr que ça soit réciproque parcontre)", inline=False)
     em.add_field(name="=join", value="Fait rejoindre Ink Girl dans le channel vocal actuel", inline=False)
     em.add_field(name="=music", value="Joue une musique aléatoire de Splatoon dans ce channel vocal", inline=False)
     em.add_field(name="=pause", value="Met la musique qui est jouée en pause", inline=False)
@@ -104,6 +105,23 @@ async def inkgirl(ctx):
     fp = "Data/Img/InkGirl/{}".format(random.choice(os.listdir("Data/Img/InkGirl")))
     msg = await ctx.send(file=discord.File(fp))
     await msg.add_reaction("<:splatoon2:479712391823622155")
+
+@bot.command()
+async def jtm(ctx):
+    if ctx.author.id == 222017802087825408:
+        msg = await ctx.send("Moi aussi !! ❤")
+        await msg.add_reaction("<:splatoon2:479712391823622155")
+        await msg.add_reaction("❤")
+    elif ctx.author.id == 363059393601994752:
+        msg = await ctx.send("Moi aussi !! ❤")
+        await msg.add_reaction("<:splatoon2:479712391823622155")
+        await msg.add_reaction("❤")
+        await ctx.author.send("Roh..toi alors.. je rougis tellement à chaque fois que tu me dis ça.. ❤")
+    else:
+        msg = await ctx.send("Restons amis !")
+        await msg.add_reaction("<:splatoon2:479712391823622155")
+        await msg.add_reaction("💔")
+ 
 
 @bot.command()
 async def rip(ctx):
@@ -156,10 +174,7 @@ async def stop(ctx):
 	msg = await ctx.send('<:squidrosedown:479789310963613696> Vidéo arrêtée ! <:squidrosedown:479789310963613696>')
 	await msg.add_reaction("<:splatoon2:479712391823622155")
 
-bot.run(os.getenv("TOKEN"))
-	
-	
-	
+
 
 # @bot.command()
 # async def splatoon(ctx):
@@ -174,3 +189,6 @@ bot.run(os.getenv("TOKEN"))
 
 
 
+
+
+bot.run(os.getenv("TOKEN"))
