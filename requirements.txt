@@ -5,4 +5,4 @@ opuslib
 PyNaCl
 aiohttp
 youtube-dl
-git@github.com:xiph/opus.git
+-e git+git://github.com/Rapptz/discord.py.git@async#egg=discord
