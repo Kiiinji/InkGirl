@@ -1,4 +1,4 @@
-discord
+discord.py
 cached_property
 requests
 opuslib
