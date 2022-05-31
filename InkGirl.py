@@ -35,8 +35,6 @@ if not discord.opus.is_loaded():
     # note that on windows this DLL is automatically provided for you
     discord.opus.load_opus('opus')
 
-discord.opus.load_opus()
-
 bot = commands.Bot(command_prefix='=')
 bot.remove_command('help')
 players = {}
