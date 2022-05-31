@@ -1,8 +1,7 @@
--e git+git://github.com/Rapptz/discord.py.git@async#egg=discord
+discord.py
 cached_property
 requests
 opuslib
 PyNaCl
 aiohttp
 youtube-dl
-
