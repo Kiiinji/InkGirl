@@ -5,4 +5,4 @@ opuslib
 PyNaCl
 aiohttp
 youtube-dl
-https://gitlab.xiph.org/xiph/opusfile.git
+https://github.com/xiph/opus
