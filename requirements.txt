@@ -5,3 +5,4 @@ opuslib
 PyNaCl
 aiohttp
 youtube-dl
+ffmpeg
